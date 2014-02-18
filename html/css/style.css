@@ -3,12 +3,12 @@ body {
   font-family: 'Georgia';
 }
 
-h1 {
-  color: #672E92;
+.navbar {
+  background: #FFF;
 }
 
-.navbar {
-  background: rgba(255, 255, 255, 0.55);
+h1 {
+  color: #672E92;
 }
 
 #logo {
@@ -31,10 +31,18 @@ h1 {
   #logo {
     width: 300px;
   }
+
+  .navbar {
+    background: #FFF;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .navbar {
+    background: rgba(255, 255, 255, 0.55);
+  }
+
   body, html {
     overflow: hidden;
     -webkit-transition: opacity 400ms;
@@ -62,6 +70,10 @@ h1 {
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .navbar {
+    background: rgba(255, 255, 255, 0.55);
+  }
+
   body, html {
     overflow: hidden;
     -webkit-transition: opacity 400ms;
