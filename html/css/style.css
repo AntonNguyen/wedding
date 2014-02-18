@@ -3,9 +3,8 @@ body {
   font-family: 'Georgia';
 }
 
-.starter-template {
-  padding: 40px 50px;
-  text-align: center;
+h1 {
+  color: #672E92;
 }
 
 .navbar {
@@ -93,7 +92,6 @@ body {
 
 .table h2 {
   font-size: 20px;
-  color: #672E92;
 }
 
 .bride .bio {
