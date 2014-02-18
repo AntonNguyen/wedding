@@ -1,0 +1,75 @@
+body {
+  padding-top: 50px;
+  font-family: 'Georgia';
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.55);
+}
+
+#logo {
+  width: 200px;
+}
+
+#links ul {
+  list-style-type: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+#links ul li {
+  float: left;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #logo {
+    width: 300px;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #logo {
+    width: 300px;
+  }
+
+  #date {
+    font-size: 25px;
+    margin-top: 18px;
+  }
+
+  #links ul {
+    margin-top: 28px;
+  }
+
+  #links ul li {
+    padding: 0 5px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #logo {
+    width: 400px;
+  }
+
+  #date {
+    font-size: 25px;
+    margin-top: 28px;
+  }
+
+  #links ul {
+    margin-top: 40px;
+  }
+
+  #links ul li {
+    padding: 0 10px;
+  }
+}
