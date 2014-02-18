@@ -208,10 +208,37 @@
     <script type="text/javascript" src="js/jquery.onepage-scroll.min.js"></script>
     <script>
     $(document).ready(function(){
-      $(".main").onepage_scroll({
-        sectionContainer: "section",
-        responsiveFallback: 600
-      });
+      if ($(window).width() >= 992) {
+        $(".main").onepage_scroll({
+          sectionContainer: "section",
+          responsiveFallback: 600
+        });
+
+        var moveToPage = function(index) {
+          $('.main').moveTo(index);
+          return false;
+        };
+
+        $('#home').on('click', function() {
+          return moveToPage(1);
+        });
+
+        $('#party').on('click', function() {
+          return moveToPage(2);
+        });
+
+        $('#ceremony').on('click', function() {
+          return moveToPage(3);
+        });
+
+        $('#reception').on('click', function() {
+          return moveToPage(4);
+        });
+
+        $('#rsvp').on('click', function() {
+          return moveToPage(5);
+        });
+      }
 
       var initializeMap = function(lat, long, id, title) {
           var latLng = new google.maps.LatLng(lat, long);
@@ -236,32 +263,6 @@
 
       initializeMap(43.735493, -79.742637, "map-ceremony", "St. Anthony of Padua Parish");
       initializeMap(43.7958784, -79.5188288, "map-reception", "Riviera Parque");
-
-      var moveToPage = function(index) {
-        $('.main').moveTo(index);
-        return false;
-      };
-
-      $('#home').on('click', function() {
-        return moveToPage(1);
-      });
-
-      $('#party').on('click', function() {
-        return moveToPage(2);
-      });
-
-      $('#ceremony').on('click', function() {
-        return moveToPage(3);
-      });
-
-      $('#reception').on('click', function() {
-        return moveToPage(4);
-      });
-
-      $('#rsvp').on('click', function() {
-        return moveToPage(5);
-      });
-
 
     });
   </script>

@@ -35,6 +35,13 @@ h1 {
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  body, html {
+    overflow: hidden;
+    -webkit-transition: opacity 400ms;
+    -moz-transition: opacity 400ms;
+    transition: opacity 400ms;
+  }
+
   #logo {
     width: 300px;
   }
@@ -55,6 +62,13 @@ h1 {
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  body, html {
+    overflow: hidden;
+    -webkit-transition: opacity 400ms;
+    -moz-transition: opacity 400ms;
+    transition: opacity 400ms;
+  }
+
   #logo {
     width: 400px;
   }
@@ -87,7 +101,7 @@ h1 {
   height: 95px;
   padding: 2px;
   background-repeat: no-repeat;
-  background-size: 93px 93px;
+  background-size: 92px 92px;
 }
 
 .table h2 {
