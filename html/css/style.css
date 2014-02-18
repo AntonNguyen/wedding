@@ -39,17 +39,6 @@ h1 {
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .navbar {
-    background: rgba(255, 255, 255, 0.55);
-  }
-
-  body, html {
-    overflow: hidden;
-    -webkit-transition: opacity 400ms;
-    -moz-transition: opacity 400ms;
-    transition: opacity 400ms;
-  }
-
   #logo {
     width: 300px;
   }
