@@ -26,6 +26,24 @@ h1 {
   float: left;
 }
 
+#ceremony-section {
+  background-image: url('../images/background.png');
+  background-position: bottom -350px left -300px;
+  background-repeat: no-repeat;
+}
+
+#reception-section {
+  background-image: url('../images/background.png');
+  background-position: bottom -350px right -300px;
+  background-repeat: no-repeat;
+}
+
+#party-section {
+  background-image: url('../images/name-background.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   #logo {
