@@ -208,7 +208,19 @@
     <script type="text/javascript" src="js/jquery.onepage-scroll.min.js"></script>
     <script>
     $(document).ready(function(){
-      if ($(window).width() >= 992) {
+      var enableScroller = function() {
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+         return false;
+        }
+
+        if ($(window).width() < 992) {
+          return false;
+        }
+
+        return true;
+      }
+
+      if (enableScroller()) {
         $(".main").onepage_scroll({
           sectionContainer: "section",
           responsiveFallback: 600
