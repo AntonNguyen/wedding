@@ -19,6 +19,7 @@ h1 {
   list-style-type: none;
   display: block;
   margin: 0;
+  margin-right: 69px;
   padding: 0;
 }
 
@@ -28,7 +29,7 @@ h1 {
 
 #ceremony-section {
   background-image: url('../images/background.png');
-  background-position: bottom -350px left -300px;
+  background-position: bottom -580px left -490px;
   background-repeat: no-repeat;
 }
 
@@ -105,9 +106,23 @@ h1 {
     padding: 0 10px;
   }
 
+  .address {
+    font-size:20px;
+  }
+
+  .em {
+    font-size: 20px;
+    font-style: italic;
+  }
+
   .map {
+    width: 600px;
     height: 500px;
-    width: 44%;
+    margin-top:30px;
+  }
+
+  .info {
+    margin-top:12em;
   }
 }
 

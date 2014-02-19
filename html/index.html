@@ -26,7 +26,6 @@
   </head>
 
   <body>
-
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="row">
         <div id="date" class="col-md-4 hidden-xs hidden-sm text-left text-center">
@@ -39,6 +38,7 @@
           <ul>
             <li><a id="home" href="#">Our Story</a></li>
             <li><a id="party" href="#">Wedding Party</a></li>
+            <li><a id="accomdations" href="#">Accomadations</a></li>
             <li><a id="ceremony" href="#">Ceremony</a></li>
             <li><a id="reception" href="#">Reception</a></li>
             <li><a id="rsvp" href="#">RSVP</a></li>
@@ -142,32 +142,41 @@
           </tr>
         </table>
       </section>
+      <section id="accomadations-section">
+        <h1>Accomadations</h1>
+      </section>
       <section id="ceremony-section">
-        <h1>Ceremony</h1>
         <div class="row">
-          <div class="col-md-6">
-            <address>
-              <strong>St. Anthony of Padua Catholic Church</strong><br/>
+          <div class="col-md-6 text-center info">
+            <h1>Ceremony</h1>
+            <h2>St. Anthony of Padua Catholic Church</h2>
+            <p class="address">
               940 North Drive Park<br/>
               Brampton, Ontario<br/>
               L6S 3L5
-            </address>
+            </p>
+            <p class="em">Ceremony commences at one'clock in the afternoon</p>
           </div>
-          <div id="map-ceremony" class="map col-md-6"/>
+          <div class="map col-md-6">
+            <div id="map-ceremony" class="map"></div>
+          </div>
         </div>
       </section>
       <section id="reception-section">
-        <h1>Reception</h1>
         <div class="row">
-          <div class="col-md-6">
-            <address>
-              <strong>Riviera Parque Dining, Banquet &amp; Convention Centre</strong><br/>
+          <div class="map col-md-6">
+            <div id="map-reception" class="map"></div>
+          </div>
+          <div class="col-md-6 text-center info">
+            <h1>Reception</h1>
+            <h2>Riviera Parque Dining,<br/>Banquet &amp; Convention Centre</h2>
+            <p class="address">
               2800 Hwy 7<br/>
               Concord, Ontario<br/>
               L4K 1W8
-            </address>
+            </p>
+            <p class="em">Cocktail reception at six o'clock in the evening</p>
           </div>
-          <div id="map-reception" class="map col-md-6"/>
         </div>
       </section>
       <section id="rsvp-section">
@@ -239,16 +248,20 @@
           return moveToPage(2);
         });
 
-        $('#ceremony').on('click', function() {
+        $('#accomdations').on('click', function() {
           return moveToPage(3);
         });
 
-        $('#reception').on('click', function() {
+        $('#ceremony').on('click', function() {
           return moveToPage(4);
         });
 
-        $('#rsvp').on('click', function() {
+        $('#reception').on('click', function() {
           return moveToPage(5);
+        });
+
+        $('#rsvp').on('click', function() {
+          return moveToPage(6);
         });
       }
 
