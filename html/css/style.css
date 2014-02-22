@@ -45,6 +45,10 @@ h1 {
   background-repeat: no-repeat;
 }
 
+#rsvp-section {
+  padding-bottom:30px;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   #logo {
