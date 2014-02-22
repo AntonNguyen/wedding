@@ -136,10 +136,6 @@ h1 {
 
 .table>tbody>tr>td {
   border-top: none;
-  height: 95px;
-  padding: 2px;
-  background-repeat: no-repeat;
-  background-size: 92px 92px;
 }
 
 .table h2 {
@@ -162,98 +158,117 @@ h1 {
   background-position: top 1px left 2px;
 }
 
-#anton {
+.bride .bio-photo {
+  float: right;
+}
+
+.groom .bio-photo {
+  float: left;
+}
+
+.bio-photo {
+  height: 95px;
+  width: 95px;
+  background-repeat: no-repeat;
+  background-size: 95px 95px;
+}
+
+.bio-photo:hover {
+  cursor: pointer;
+}
+
+#anton .bio-photo {
   background-image: url("../images/anton.png");
 }
 
-#anton:hover {
+#anton .bio-photo:hover {
   background-image: url("../images/anton-goofy.png");
 }
 
-#cindy {
+#cindy .bio-photo {
   background-image: url("../images/cindy.png");
 }
 
-#cindy:hover {
+#cindy .bio-photo:hover {
   background-image: url("../images/cindy-goofy.png");
 }
 
-#tenniel {
+#tenniel .bio-photo {
   background-image: url("../images/tenniel.png");
 }
 
-#tenniel:hover {
+#tenniel .bio-photo:hover {
   background-image: url("../images/tenniel-goofy.png");
 }
 
-#karen {
+#karen .bio-photo {
   background-image: url("../images/karen.png");
 }
 
-#karen:hover {
+#karen .bio-photo:hover {
   background-image: url("../images/karen-goofy.png");
 }
 
-#trung {
+#trung .bio-photo {
   background-image: url("../images/trung.png");
 }
 
-#trung:hover {
+#trung .bio-photo:hover {
   background-image: url("../images/trung-goofy.png");
 }
 
-#sandra {
+#sandra .bio-photo {
   background-image: url("../images/sandra.png");
 }
 
-#sandra:hover {
+#sandra .bio-photo:hover {
   background-image: url("../images/sandra-goofy.png");
 }
 
-#julie {
+#julie .bio-photo {
   background-image: url("../images/julie.png");
 }
 
-#julie:hover {
+#julie .bio-photo:hover {
   background-image: url("../images/julie-goofy.png");
 }
 
-#ann {
+#ann .bio-photo {
   background-image: url("../images/ann.png");
 }
 
-#ann:hover {
+#ann .bio-photo:hover {
   background-image: url("../images/ann-goofy.png");
 }
 
-#ramiro {
+#ramiro .bio-photo {
   background-image: url("../images/ramiro.png");
 }
 
-#ramiro:hover {
+#ramiro .bio-photo:hover {
   background-image: url("../images/ramiro-goofy.png");
 }
 
-#alphonse {
+#alphonse .bio-photo {
   background-image: url("../images/alphonse.png");
 }
 
-#alphonse:hover {
+#alphonse .bio-photo:hover {
   background-image: url("../images/alphonse-goofy.png");
 }
 
-#vanessa {
+#vanessa .bio-photo {
   background-image: url("../images/vanessa.png");
 }
 
-#vanessa:hover {
+#vanessa .bio-photo:hover {
   background-image: url("../images/vanessa-goofy.png");
 }
 
-#ted {
+#ted .bio-photo {
   background-image: url("../images/ted.png");
 }
 
-#ted:hover {
+#ted .bio-photo:hover {
   background-image: url("../images/ted-goofy.png");
 }
