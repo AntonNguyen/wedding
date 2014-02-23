@@ -38,10 +38,10 @@
           <ul>
             <li><a id="home" href="#">Our Story</a></li>
             <li><a id="party" href="#">Wedding Party</a></li>
-            <li><a id="accomdations" href="#">Accomadations</a></li>
             <li><a id="ceremony" href="#">Ceremony</a></li>
             <li><a id="reception" href="#">Reception</a></li>
             <li><a id="rsvp" href="#">RSVP</a></li>
+            <li><a id="accomadations" href="#">Accomadations</a></li>
           </ul>
         </div>
       </div>
@@ -154,9 +154,6 @@
           </tr>
         </table>
       </section>
-      <section id="accomadations-section">
-        <h1>Accomadations</h1>
-      </section>
       <section id="ceremony-section">
         <div class="row">
           <div class="col-md-6 text-center info">
@@ -252,6 +249,32 @@
           </div>
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
+      </section>
+      <section id="accomadations-section">
+        <h1>Accomadations</h1>
+        <p>
+          For your reference, the following is a list of hotels located close to the reception hall. Please make arrangements for both accommodation and transpotation in advance if you are planning on drinking.
+        </p>
+
+        Novotel Toronto Vaughan, 200 Bass Pro Mills Dr.
+
+        Monte Carlo Inns Vaughan Suites, 705 Applewood Cres.
+
+        Aloft Vaughan Mills, 151 Bass Pro Mills Dr.
+
+        Hilton Garden Inn, 3201 Highway 7
+
+        Residence Inn, 11 Interchange Way
+
+        Courtyard Toronto Vaughan, 150 Interchange Way
+
+        Springhill Suites, 612 Applewood Cres.
+
+        Homewood Suites, 618 Applewood Cres.
+
+        Holiday Inn Express, 6100 Highway 7
+
+        Element Vaughan Southwest, 6170 Highway 7
       </section>
 
     </div><!-- /.container -->
@@ -426,19 +449,19 @@
           return moveToPage(2);
         });
 
-        $('#accomdations').on('click', function() {
+        $('#ceremony').on('click', function() {
           return moveToPage(3);
         });
 
-        $('#ceremony').on('click', function() {
+        $('#reception').on('click', function() {
           return moveToPage(4);
         });
 
-        $('#reception').on('click', function() {
+        $('#rsvp').on('click', function() {
           return moveToPage(5);
         });
 
-        $('#rsvp').on('click', function() {
+        $('#accomadations').on('click', function() {
           return moveToPage(6);
         });
       }
