@@ -49,6 +49,10 @@ h1 {
   background-repeat: no-repeat;
 }
 
+#rsvp {
+  font-weight: bold;
+}
+
 #rsvp-section {
   padding-bottom:30px;
 }
