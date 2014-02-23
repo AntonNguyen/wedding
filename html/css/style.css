@@ -312,3 +312,10 @@ h1 {
 .bio-content h3 {
   margin: 2px 0;
 }
+
+.vimeo-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 67.9%;
+  height: 80%;
+}
