@@ -39,7 +39,7 @@ h1 {
   background-repeat: no-repeat;
 }
 
-#party-section, #accomadations-section, #story-section {
+#party-section, #accomadations-section {
   background-image: url('../images/name-background.png');
   background-position: center center;
   background-repeat: no-repeat;
