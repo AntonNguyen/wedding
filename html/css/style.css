@@ -314,3 +314,48 @@ h1 {
   height: 20px;
   background: url('../images/close.gif');
 }
+
+.hotels {
+  list-style-type: none;
+  display: block;
+}
+
+.hotels li {
+  padding: 10px;
+  display: block;
+  height: 70px;
+}
+
+.hotel-info {
+  float: left;
+  display: block;
+  margin-left: 7px;
+}
+
+.hotel-photo {
+  height: 60px;
+  width: 90px;
+  background-repeat: no-repeat;
+  background-image: url("../images/hotels.png");
+  float: left;
+}
+
+#aloft .hotel-photo {
+  background-position: 0 0;
+}
+
+#element .hotel-photo {
+  background-position: 0 -110px;
+}
+
+#homewood .hotel-photo {
+  background-position: 0 -220px;
+}
+
+#novotel .hotel-photo {
+  background-position: 0 -330px;
+}
+
+#springhill .hotel-photo {
+  background-position: 0 -440px;
+}
