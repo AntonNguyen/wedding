@@ -173,107 +173,85 @@ h1 {
   height: 92px;
   width: 92px;
   background-repeat: no-repeat;
-  background-size: 92px 92px;
+  background-image: url("../images/wedding-party.png");
+  background-position: top left;
 }
 
 .bio-photo:hover {
   cursor: pointer;
 }
 
-#anton .bio-photo {
-  background-image: url("../images/anton.png");
-}
-
-#anton .bio-photo:hover {
-  background-image: url("../images/anton-goofy.png");
-}
-
-#cindy .bio-photo {
-  background-image: url("../images/cindy.png");
-}
-
-#cindy .bio-photo:hover {
-  background-image: url("../images/cindy-goofy.png");
-}
-
-#tenniel .bio-photo {
-  background-image: url("../images/tenniel.png");
-}
-
-#tenniel .bio-photo:hover {
-  background-image: url("../images/tenniel-goofy.png");
-}
-
-#karen .bio-photo {
-  background-image: url("../images/karen.png");
-}
-
-#karen .bio-photo:hover {
-  background-image: url("../images/karen-goofy.png");
-}
-
-#trung .bio-photo {
-  background-image: url("../images/trung.png");
-}
-
-#trung .bio-photo:hover {
-  background-image: url("../images/trung-goofy.png");
-}
-
-#sandra .bio-photo {
-  background-image: url("../images/sandra.png");
-}
-
-#sandra .bio-photo:hover {
-  background-image: url("../images/sandra-goofy.png");
-}
-
-#julie .bio-photo {
-  background-image: url("../images/julie.png");
-}
-
-#julie .bio-photo:hover {
-  background-image: url("../images/julie-goofy.png");
-}
-
-#ann .bio-photo {
-  background-image: url("../images/ann.png");
-}
-
-#ann .bio-photo:hover {
-  background-image: url("../images/ann-goofy.png");
-}
-
-#ramiro .bio-photo {
-  background-image: url("../images/ramiro.png");
-}
-
-#ramiro .bio-photo:hover {
-  background-image: url("../images/ramiro-goofy.png");
-}
-
-#alphonse .bio-photo {
-  background-image: url("../images/alphonse.png");
-}
-
 #alphonse .bio-photo:hover {
-  background-image: url("../images/alphonse-goofy.png");
+  background-position: 0 0;
 }
-
-#vanessa .bio-photo {
-  background-image: url("../images/vanessa.png");
+#alphonse .bio-photo {
+  background-position: 0 -142px;
 }
-
-#vanessa .bio-photo:hover {
-  background-image: url("../images/vanessa-goofy.png");
+#ann .bio-photo:hover {
+  background-position: 0 -284px;
 }
-
-#ted .bio-photo {
-  background-image: url("../images/ted.png");
+#ann .bio-photo {
+  background-position: 0 -426px;
 }
-
+#anton .bio-photo:hover {
+  background-position: 0 -568px;
+}
+#anton .bio-photo {
+  background-position: 0 -710px;
+}
+#cindy .bio-photo:hover {
+  background-position: 0 -852px;
+}
+#cindy .bio-photo {
+  background-position: 0 -994px;
+}
+#julie .bio-photo:hover {
+  background-position: 0 -1136px;
+}
+#julie .bio-photo {
+  background-position: 0 -1278px;
+}
+#karen .bio-photo:hover {
+  background-position: 0 -1420px;
+}
+#karen .bio-photo {
+  background-position: 0 -1562px;
+}
+#ramiro .bio-photo:hover {
+  background-position: 0 -1704px;
+}
+#ramiro .bio-photo {
+  background-position: 0 -1846px;
+}
+#sandra .bio-photo:hover {
+  background-position: -142px 0;
+}
+#sandra .bio-photo {
+  background-position: -142px -142px;
+}
 #ted .bio-photo:hover {
-  background-image: url("../images/ted-goofy.png");
+  background-position: -142px -284px;
+}
+#ted .bio-photo {
+  background-position: -142px -426px;
+}
+#tenniel .bio-photo:hover {
+  background-position: -142px -568px;
+}
+#tenniel .bio-photo {
+  background-position: -142px -710px;
+}
+#trung .bio-photo:hover {
+  background-position: -142px -852px;
+}
+#trung .bio-photo {
+  background-position: -142px -994px;
+}
+#vanessa .bio-photo:hover {
+  background-position: -142px -1136px;
+}
+#vanessa .bio-photo {
+  background-position: -142px -1278px;
 }
 
 .bio-content {
