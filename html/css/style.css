@@ -15,6 +15,10 @@ h1 {
   width: 200px;
 }
 
+#links {
+  padding-right: 100px;
+}
+
 #links ul {
   list-style-type: none;
   display: block;
