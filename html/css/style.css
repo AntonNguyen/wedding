@@ -319,3 +319,9 @@ h1 {
   width: 67.9%;
   height: 80%;
 }
+
+.close {
+  width: 20px;
+  height: 20px;
+  background: url('../images/close.gif');
+}
