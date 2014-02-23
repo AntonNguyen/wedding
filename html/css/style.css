@@ -184,73 +184,85 @@ h1 {
 #alphonse .bio-photo:hover {
   background-position: 0 0;
 }
-#alphonse .bio-photo {
+#alphonse .bio-photo,
+#alphonse-info .bio-photo {
   background-position: 0 -142px;
 }
 #ann .bio-photo:hover {
   background-position: 0 -284px;
 }
-#ann .bio-photo {
+#ann .bio-photo,
+#ann-info .bio-photo {
   background-position: 0 -426px;
 }
 #anton .bio-photo:hover {
   background-position: 0 -568px;
 }
-#anton .bio-photo {
+#anton .bio-photo,
+#anton-info .bio-photo {
   background-position: 0 -710px;
 }
 #cindy .bio-photo:hover {
   background-position: 0 -852px;
 }
-#cindy .bio-photo {
+#cindy .bio-photo,
+#cindy-info .bio-photo {
   background-position: 0 -994px;
 }
 #julie .bio-photo:hover {
   background-position: 0 -1136px;
 }
-#julie .bio-photo {
+#julie .bio-photo,
+#julie-info .bio-photo {
   background-position: 0 -1278px;
 }
 #karen .bio-photo:hover {
   background-position: 0 -1420px;
 }
-#karen .bio-photo {
+#karen .bio-photo,
+#karen-info .bio-photo {
   background-position: 0 -1562px;
 }
 #ramiro .bio-photo:hover {
   background-position: 0 -1704px;
 }
-#ramiro .bio-photo {
+#ramiro .bio-photo,
+#ramiro-info .bio-photo {
   background-position: 0 -1846px;
 }
 #sandra .bio-photo:hover {
   background-position: -142px 0;
 }
-#sandra .bio-photo {
+#sandra .bio-photo,
+#sandra-info .bio-photo {
   background-position: -142px -142px;
 }
 #ted .bio-photo:hover {
   background-position: -142px -284px;
 }
-#ted .bio-photo {
+#ted .bio-photo,
+#ted-info .bio-photo {
   background-position: -142px -426px;
 }
 #tenniel .bio-photo:hover {
   background-position: -142px -568px;
 }
-#tenniel .bio-photo {
+#tenniel .bio-photo,
+#tenniel-info .bio-photo {
   background-position: -142px -710px;
 }
 #trung .bio-photo:hover {
   background-position: -142px -852px;
 }
-#trung .bio-photo {
+#trung .bio-photo,
+#trung-info .bio-photo {
   background-position: -142px -994px;
 }
 #vanessa .bio-photo:hover {
   background-position: -142px -1136px;
 }
-#vanessa .bio-photo {
+#vanessa .bio-photo,
+#vanessa-info .bio-photo {
   background-position: -142px -1278px;
 }
 
@@ -269,7 +281,7 @@ h1 {
   margin: 0 auto;
 }
 
-.bio-content img {
+.bio-content .bio-photo {
   float: left;
   margin-right: 5px;
   margin-bottom: 5px;
