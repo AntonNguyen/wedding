@@ -224,29 +224,34 @@ h1 {
 }
 
 .hotels {
-  list-style-type: none;
   display: block;
   padding: 0;
 }
 
-.hotels li {
+.hotels .hotel-content {
   padding: 10px;
   display: block;
-  height: 80px;
+  height: 100px;
 }
 
 .hotel-info {
-  float: left;
-  display: block;
   margin-left: 7px;
+  float: left;
 }
 
 .hotel-photo {
+  float: left;
   height: 60px;
   width: 90px;
   background-repeat: no-repeat;
   background-image: url("../images/hotels.png");
-  float: left;
+  margin: 0;
+}
+
+.clearfix {
+  margin: 0;
+  padding: 0;
+  clear:both;
 }
 
 #aloft .hotel-photo {
