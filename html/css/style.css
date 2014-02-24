@@ -179,14 +179,15 @@ h1 {
   display:none;
   z-index:10000;
   background-color:#fff;
-  width:675px;
+  width:676px;
   min-height:200px;
   border:1px solid #666;
   -moz-box-shadow:0 0 90px 5px #000;
   -webkit-box-shadow: 0 0 90px #000;
   padding: 10px;
   top: 25%;
-  left: 28%;
+  left: 50%;
+  margin-left: -338px;
 }
 
 .bio-content .bio-photo {
