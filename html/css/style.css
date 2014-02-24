@@ -31,24 +31,6 @@ h1 {
   float: left;
 }
 
-#ceremony-section {
-  background-image: url('../images/background.png');
-  background-position: bottom -580px left -490px;
-  background-repeat: no-repeat;
-}
-
-#reception-section {
-  background-image: url('../images/background.png');
-  background-position: bottom -350px right -300px;
-  background-repeat: no-repeat;
-}
-
-#party-section, #accomadations-section {
-  background-image: url('../images/name-background.png');
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
 #rsvp {
   font-weight: bold;
 }
@@ -382,6 +364,24 @@ iframe,
 
   .info {
     margin-top:12em;
+  }
+
+  #ceremony-section {
+    background-image: url('../images/background.png');
+    background-position: bottom -580px left -490px;
+    background-repeat: no-repeat;
+  }
+
+  #reception-section {
+    background-image: url('../images/background.png');
+    background-position: bottom -350px right -300px;
+    background-repeat: no-repeat;
+  }
+
+  #party-section, #accomadations-section {
+    background-image: url('../images/name-background.png');
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 
   iframe,
