@@ -57,87 +57,6 @@ h1 {
   padding-bottom:30px;
 }
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  #logo {
-    width: 300px;
-  }
-
-  .navbar {
-    background: #FFF;
-  }
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  #logo {
-    width: 300px;
-  }
-
-  #date {
-    font-size: 25px;
-    margin-top: 18px;
-  }
-
-  #links ul {
-    margin-top: 28px;
-  }
-
-  #links ul li {
-    padding: 0 5px;
-  }
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .navbar {
-    background: rgba(255, 255, 255, 0.55);
-  }
-
-  body, html {
-    overflow: hidden;
-    -webkit-transition: opacity 400ms;
-    -moz-transition: opacity 400ms;
-    transition: opacity 400ms;
-  }
-
-  #logo {
-    width: 400px;
-  }
-
-  #date {
-    font-size: 25px;
-    margin-top: 28px;
-  }
-
-  #links ul {
-    margin-top: 40px;
-  }
-
-  #links ul li {
-    padding: 0 10px;
-  }
-
-  .address {
-    font-size:20px;
-  }
-
-  .em {
-    font-size: 20px;
-    font-style: italic;
-  }
-
-  .map {
-    width: 600px;
-    height: 500px;
-    margin-top:30px;
-  }
-
-  .info {
-    margin-top:12em;
-  }
-}
-
 .table .bride {
   text-align: right;
 }
@@ -313,8 +232,6 @@ h1 {
 .vimeo-wrapper {
   position: relative;
   margin: 0 auto;
-  width: 67.9%;
-  height: 80%;
 }
 
 .close {
@@ -366,4 +283,110 @@ h1 {
 
 #springhill .hotel-photo {
   background-position: 0 -440px;
+}
+
+
+iframe,
+.vimeo-wrapper {
+  width: 300px;
+  height: 169px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #logo {
+    width: 300px;
+  }
+
+  .navbar {
+    background: #FFF;
+  }
+
+  iframe,
+  .vimeo-wrapper {
+    width: 750px;
+    height: 422px;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #logo {
+    width: 300px;
+  }
+
+  #date {
+    font-size: 25px;
+    margin-top: 18px;
+  }
+
+  #links ul {
+    margin-top: 28px;
+  }
+
+  #links ul li {
+    padding: 0 5px;
+  }
+
+  iframe,
+  .vimeo-wrapper {
+    width: 960px;
+    height: 540px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .navbar {
+    background: rgba(255, 255, 255, 0.55);
+  }
+
+  body, html {
+    overflow: hidden;
+    -webkit-transition: opacity 400ms;
+    -moz-transition: opacity 400ms;
+    transition: opacity 400ms;
+  }
+
+  #logo {
+    width: 400px;
+  }
+
+  #date {
+    font-size: 25px;
+    margin-top: 28px;
+  }
+
+  #links ul {
+    margin-top: 40px;
+  }
+
+  #links ul li {
+    padding: 0 10px;
+  }
+
+  .address {
+    font-size:20px;
+  }
+
+  .em {
+    font-size: 20px;
+    font-style: italic;
+  }
+
+  .map {
+    width: 600px;
+    height: 500px;
+    margin-top:30px;
+  }
+
+  .info {
+    margin-top:12em;
+  }
+
+  iframe,
+  .vimeo-wrapper {
+    width: 960px;
+    height: 540px;
+  }
 }
