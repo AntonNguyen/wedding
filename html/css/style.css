@@ -385,6 +385,10 @@ iframe,
     background-repeat: no-repeat;
   }
 
+  #reception-section .map {
+    margin-left: 20px;
+  }
+
   #party-section, #accomadations-section {
     background-image: url('../images/name-background.png');
     background-position: center center;
