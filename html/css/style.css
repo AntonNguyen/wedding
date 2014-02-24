@@ -225,6 +225,7 @@ h1 {
 .hotels {
   list-style-type: none;
   display: block;
+  padding: 0;
 }
 
 .hotels li {
