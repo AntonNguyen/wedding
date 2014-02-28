@@ -403,7 +403,16 @@
       <h2>Trung Diep</h2>
       <h3>Groomsmen</h3>
       <p>
-        Biography Here
+        It's a bird! It's a plane! No, it's Trung! Ever the live-long Superman fan, who would of thought he'd be able to
+        get along with Anton, a live-long Batman fan? Long ago, when both Trung and Anton were still in the springtime of
+        their youth, they met at a computer company called, "TME". Being the only two "young" people there, it was only
+        natural that they bonded, doing youthful activities such as, over a shared interest in Dragonball Z and Naruto.
+      </p>
+      <p>
+        Their friendship has endured for many years, and in 2005, Anton had the honor of being one of Trung's groomsmen.
+        As one of Trung's esteemed groomsmen, Anton made sure Trung's final days as a bachelor were filled with
+        many great adventures, and most importantly, misadventures. With Trung as one of Anton's groomsmen, Anton is
+        certain that many great new adventures, and most importantly, misadventures are to come.
       </p>
     </div>
     <div id="julie-info" class="bio-content">
@@ -491,73 +500,6 @@
     <script type="text/javascript" src="js/jquery.tools.min.js"></script>
     <script>
       $(document).ready(function(){
-        var isInternetExplorer = function () {
-          return navigator.appName == 'Microsoft Internet Explorer';
-        };
-
-        var enableScroller = function() {
-          if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-           return false;
-          }
-
-          if ($(window).width() < 992) {
-            return false;
-          }
-
-          if (isInternetExplorer()) {
-            return false;
-          }
-
-          return true;
-        }
-
-        if (enableScroller()) {
-          $(".main").onepage_scroll({
-            sectionContainer: "section",
-            responsiveFallback: 600
-          });
-
-          var moveToPage = function(index) {
-            $('.main').moveTo(index);
-            return false;
-          };
-
-          $('#home').on('click', function() {
-            return moveToPage(1);
-          });
-
-          $('#party').on('click', function() {
-            return moveToPage(2);
-          });
-
-          $('#ceremony').on('click', function() {
-            return moveToPage(3);
-          });
-
-          $('#reception').on('click', function() {
-            return moveToPage(4);
-          });
-
-          $('#rsvp').on('click', function() {
-            return moveToPage(5);
-          });
-
-          $('#accomadations').on('click', function() {
-            return moveToPage(6);
-          });
-
-          $('.view-bio').overlay({
-            top: 'center',
-            left: 'center',
-            mask: {
-              color: '#FFF',
-              loadSpeed: 200,
-              opacity: 0.9
-            },
-            closeOnClick: false
-          });
-        }
-
         var initializeMap = function(lat, long, id, title) {
             var latLng = new google.maps.LatLng(lat, long);
             var options = {
@@ -581,6 +523,17 @@
 
         initializeMap(43.735493, -79.742637, "map-ceremony", "St. Anthony of Padua Parish");
         initializeMap(43.7958784, -79.5188288, "map-reception", "Riviera Parque");
+
+        $('.view-bio').overlay({
+          top: 'center',
+          left: 'center',
+          mask: {
+            color: '#FFF',
+            loadSpeed: 200,
+            opacity: 0.9
+          },
+          closeOnClick: false
+        });
       });
     </script>
   </body>

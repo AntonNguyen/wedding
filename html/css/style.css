@@ -13,6 +13,7 @@ h1 {
 
 #logo {
   width: 200px;
+  margin-bottom: 7px;
 }
 
 #links {
@@ -327,14 +328,22 @@ iframe,
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .navbar {
-    background: rgba(255, 255, 255, 0.55);
+    background: rgba(241, 241, 249, 0.55);
+    padding: 5px;
   }
 
   body, html {
-    overflow: hidden;
     -webkit-transition: opacity 400ms;
     -moz-transition: opacity 400ms;
     transition: opacity 400ms;
+    background-image: url('../images/name-background.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+  }
+
+  section {
+    padding:70px;
   }
 
   #logo {
@@ -373,26 +382,8 @@ iframe,
     margin-top:12em;
   }
 
-  #ceremony-section {
-    background-image: url('../images/background.png');
-    background-position: bottom -580px left -490px;
-    background-repeat: no-repeat;
-  }
-
-  #reception-section {
-    background-image: url('../images/background.png');
-    background-position: bottom -350px right -300px;
-    background-repeat: no-repeat;
-  }
-
   #reception-section .map {
     margin-left: 20px;
-  }
-
-  #party-section, #accomadations-section {
-    background-image: url('../images/name-background.png');
-    background-position: center center;
-    background-repeat: no-repeat;
   }
 
   iframe,
