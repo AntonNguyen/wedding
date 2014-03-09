@@ -20,6 +20,10 @@ h1 {
   font-size: 40px;
 }
 
+#logo {
+  width: 300px;
+}
+
 /* Customize the nav-justified links to be fill the entire space of the .navbar */
 
 .nav-justified {
@@ -59,6 +63,12 @@ h1 {
   border-radius: 0 0 5px 5px;
 }
 
+.map {
+  width: 300px;
+  height: 300px;
+  margin: 30 auto;
+}
+
 @media (min-width: 768px) {
   .nav-justified {
     max-height: 52px;
@@ -78,7 +88,7 @@ h1 {
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+@media (min-width: 992px) {
   /* Remove the padding we set earlier */
   .masthead,
   .marketing,
@@ -109,15 +119,16 @@ h1 {
   }
 
   .map {
-    width: 550px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     margin-top:30px;
+  }
+
+  #logo {
+    width: 400px;
   }
 }
 
-#logo {
-  width: 320px;
-}
 
 h3 {
   margin-top: 7px;
