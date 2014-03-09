@@ -22,15 +22,5 @@ var WeddingPartyView = ContentView.extend({
       closeOnClick: false
     });
     return this;
-  },
-
-  events: {
-    'click #view-bio': 'displayBio',
-    'click': 'displayBio'
-  },
-
-  displayBio: function() {
-    console.log('hello');
   }
-
 });
