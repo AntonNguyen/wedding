@@ -64,15 +64,14 @@ h1 {
 }
 
 .map {
-  width: 250px;
-  height: 250px;
-  margin: 30 auto;
+  width: 270px;
+  height: 270px;
 }
 
 iframe,
 .vimeo-wrapper {
-  width: 300px;
-  height: 169px;
+  width: 270px;
+  height: 152px;
 }
 
 /* Responsive: Portrait tablets and up */
