@@ -21,7 +21,7 @@ h1 {
 }
 
 #logo {
-  width: 300px;
+  width: 250px;
 }
 
 /* Customize the nav-justified links to be fill the entire space of the .navbar */
@@ -64,8 +64,8 @@ h1 {
 }
 
 .map {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   margin: 30 auto;
 }
 
