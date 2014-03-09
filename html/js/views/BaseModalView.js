@@ -17,7 +17,7 @@ var BaseModalView = Backbone.View.extend({
 
     $('.modal-name', this.el).html(person.name);
     $('.modal-title', this.el).html(person.title);
-    $('.modal-body', this.el).html(person.content);
+    $('.modal-body', this.el).html(person.content});
     $(this.el).removeClass('hide');
     $(this.el).modal('show');
   },
