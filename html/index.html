@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,17 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Anton Nguyen">
+    <meta name="author" content="">
     <link rel="shortcut icon" href="favicon.ico">
 
     <title>Cindy &amp; Anton's Wedding</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/scroller.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/justified-nav.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -26,236 +24,384 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="row">
-        <div id="date" class="col-md-4 hidden-xs hidden-sm text-left text-right">
-            August 30th, 2014
-        </div>
-        <div class="col-md-4 text-center">
+
+    <div class="container">
+
+      <div class="masthead">
+        <div class="text-center">
           <img id="logo" src="images/logo.png" alt="Cindy &amp; Anton's Wedding"/>
         </div>
-        <div id="links" class="col-md-4 hidden-xs hidden-sm text-right">
+        <h3 class="text-center">August 30th, 2014</h3>
+        <ul class="nav nav-justified">
+          <li class="active"><a href="#our-story">Our Story</a></li>
+          <li><a href="#wedding-party">Wedding Party</a></li>
+          <li><a href="#ceremony">Ceremony</a></li>
+          <li><a href="#reception">Reception</a></li>
+          <li><a href="#rsvp">RSVP</a></li>
+          <li><a href="#accommadations">Accommadations</a></li>
+        </ul>
+      </div>
+
+      <div id="content"></div>
+    </div> <!-- /container -->
+
+    <!-- Templates -->
+
+    <script id="our-story" type="text/html">
+      <h1>Our Story</h1>
+      <div class="vimeo-wrapper">
+        <iframe src="http://player.vimeo.com/video/43713894?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </script>
+
+    <script id="wedding-party" type="text/html">
+      <h1>Wedding Party</h1>
+      <table class="table table-condensed">
+        <tr>
+          <td class="bride" id="cindy">
+            <div class="bio-photo view-bio" rel="#cindy-info"></div>
+            <div class="bio hidden-xs">
+              <h2><a class="view-bio" rel="#cindy-info" alt="Cindy Vuong">Cindy Vuong</a></h2>
+              <p>Bride</p>
+            </div>
+          </td>
+          <td class="groom" id="anton">
+            <div class="bio-photo view-bio" rel="#anton-info"></div>
+            <div class="bio hidden-xs">
+              <h2><a class="view-bio" rel="#anton-info" alt="Anton Nguyen">Anton Nguyen</a></h2>
+              <p>Groom</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="bride" id="karen">
+            <div class="bio-photo view-bio" rel="#karen-info"></div>
+            <div class="bio hidden-xs">
+              <h2><a class="view-bio" rel="#karen-info" alt="Karen Sandhu">Karen Sandhu</a></h2>
+              <p>Maid of Honour</p>
+            </div>
+          </td>
+          <td class="groom" id="tenniel">
+            <div class="bio-photo view-bio" rel="#tenniel-info"></div>
+            <div class="bio hidden-xs">
+              <h2><a class="view-bio" rel="#tenniel-info" alt="Tenniel Chan">Tenniel Chan</a></h2>
+              <p>Best Man</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="bride" id="sandra">
+            <div class="bio-photo view-bio" rel="#sandra-info"></div>
+            <div class="bio hidden-xs">
+              <h2><a class="view-bio" rel="#sandra-info" alt="Sandra Wainwright">Sandra Wainwright</a></h2>
+              <p>Bridesmaid</p>
+            </div>
+          </td>
+          <td class="groom" id="trung">
+            <div class="bio-photo view-bio" rel="#trung-info"></div>
+            <div class="bio hidden-xs">
+              <h2><a class="view-bio" rel="#trung-info" alt="Trung Diep">Trung Diep</a></h2>
+              <p>Groomsmen</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="bride" id="julie">
+            <div class="bio-photo view-bio" rel="#julie-info"></div>
+            <div class="bio hidden-xs">
+              <h2><a class="view-bio" rel="#julie-info" alt="Julie Wainwright">Julie Wainwright</a></h2>
+              <p>Bridesmaid</p>
+            </div>
+          </td>
+          <td class="groom" id="alphonse">
+            <div class="bio-photo view-bio" rel="#alphonse-info"></div>
+            <div class="bio hidden-xs">
+              <h2><a class="view-bio" rel="#alphonse-info" alt="Alphonse Nguyen">Alphonse Nguyen</a></h2>
+              <p>Groomsmen</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="bride" id="ann">
+            <div class="bio-photo view-bio" rel="#ann-info"></div>
+            <div class="bio hidden-xs">
+              <h2><a class="view-bio" rel="#ann-info" alt="Ann Hui">Ann Hui</a></h2>
+              <p>Bridesmaid</p>
+            </div>
+          </td>
+          <td class="groom" id="ramiro">
+            <div class="bio-photo view-bio" rel="#ramiro-info"></div>
+            <div class="bio hidden-xs">
+              <h2><a class="view-bio" rel="#ramiro-info" alt="Ramiro Chamorro">Ramiro Chamorro</a></h2>
+              <p>Groomsmen</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="bride" id="vanessa">
+            <div class="bio-photo view-bio" rel="#vanessa-info"></div>
+            <div class="bio hidden-xs">
+              <h2><a class="view-bio" rel="#vanessa-info" alt="Vanessa Ramawad">Vanessa Ramawad</a></h2>
+              <p>Bridesmaid</p>
+            </div>
+          </td>
+          <td class="groom" id="ted">
+            <div class="bio-photo view-bio" rel="#ted-info"></div>
+            <div class="bio hidden-xs">
+              <h2><a class="view-bio" rel="#ted-info" alt="Ted Chan">Ted Chan</a></h2>
+              <p>Groomsmen</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <div id="cindy-info" class="bio-content">
+        <div class="bio-photo"></div>
+        <h2>Cindy Vuong</h2>
+        <h3>Bride</h3>
+        <p>
+          Cindy first met Anton at a joint birthday party for Melissa Chan and herself in 2003.
+          There was an instant and undeniable chemistry between the two, as they were both driven
+          by a mutual love of music. They would talk everyday, sharing songs with one another, laughing together
+          and quickly became close friends.
+        </p>
+        <p>
+          It took two years, before Cindy finally succumbed to Anton&apos;s devilish charms, and dashing good looks,
+          an event, that Anton believes to be the best decision of Cindy&apos;s life. After driving Cindy crazy for 8 years with his antics,
+          Anton realized that if he wanted it, he had to put a ring on it. And so, on August 29th, 2013,
+          Anton had Cindy picked up in a limousine from work in Downtown Toronto, and sent her on an elaborate scavenger hunt around Mississauga,
+          to recreate the fateful night that Anton asked Cindy to be his girlfriend. His big romantic gesture paid off, as Cindy said yes, and as you know, the rest is history.
+        </p>
+      </div>
+      <div id="anton-info" class="bio-content">
+        <div class="bio-photo"></div>
+        <h2>Anton Nguyen</h2>
+        <h3>Groom</h3>
+        <p>
+          Anton had known Cindy for two years, before he realized how really, really, really, ridiculously happy, she made him, and thus, Anton decided to pursue Cindy&apos;s affections.
+          Having been friends for so long, Anton decided a &apos;slow burn&apos; strategy was best, where Anton would subtly court her, just a little, every day, until Cindy would suddenly realize
+          she had feelings for Anton, but not know how it happened.
+        </p>
+        <p>
+          After battling the friendzone for seven long months, Anton decided that enough was enough: he would make Cindy his girlfriend!
+          So after a long day, studying at UTM, he took her out for a fancy dinner at Pizza Hut. After graciously paying for the meal, Anton took Cindy home. He was about to make his big move,
+          when the unimaginable happened: He chickened out!
+        </p>
+        <p>
+          Driving away, images of a life without Cindy flashed before Anton&apos;s eyes, causing him to shudder at the possibility of such a world. After a boost in confidence (yelling) from Nia Warrouw, Anton turned the car around,
+          and drove back to Cindy&apos;s home. In order to lure her out, Anton shamefully lied to her, telling her that he had "lost" his debit card on her driveway, and needed
+          her help to find it. Cindy came out, with her flashlight, where Anton unveiled the depths of his deceit and revealed his feelings for her. It worked, and so on November 13th, 2005,
+          they became lovers.
+        </p>
+      </div>
+      <div id="karen-info" class="bio-content">
+        <div class="bio-photo"></div>
+        <h2>Karen Sandhu</h2>
+        <h3>Maid of Honour</h3>
+        <p>
+          Cindy had begun her 2nd year of business administration at Sheridan college, when a bright-eyed girl,
+          dressed in green, sat down beside her in a puff, nearly spilling a bottle of orange juice onto Cindy’s laptop!
+          Cindy had never met someone who could fit so many words, so fast, into a sentence, without taking a breath of
+          air!
+        </p>
+        <p>
+          From that day, Cindy and Karen were inseparable. Karen has the unique ability to accidentally kick you,
+          under a table from absolutely any angle: the cause of many bruises on Cindy’s legs. Cindy considers Karen
+          to be the most caring person she knows, an individual who always stand the people she loves no matter
+          where they are. Cindy is lucky to have Karen as her maid of honour.
+        </p>
+      </div>
+      <div id="tenniel-info" class="bio-content">
+        <div class="bio-photo"></div>
+        <h2>Tenniel Chan</h2>
+        <h3>Best Man</h3>
+        <p>
+          Anton had no idea, that in the lecture hall of his "Object-Oriented Systems Analysis and Design Using UML" class, that he would
+          meet his future best man. At the University of Toronto, life as a Computer Science student was difficult, fraught with countless all-nighters,
+          endless cups of coffee, and immeasurable explcits shouted at a computer screen. Despite all these trials and tribulations,
+          at least with Tenniel fighting alongside him in the trenches, Anton knew he&apos;d survive.
+        </p>
+        <p>
+          After the two broke free of the shackles of education, they finally began to experience and understand life with an income.
+          The two embarked on many adventures, taking them from the streets of Montreal, all the way to the bright lights of Las Vegas.
+          No matter what troubles arose throughout their adventures, Tenniel was always there with Anton, watching his back.
+          And so, on this important day, Anton has chosen to trust Tenniel to stand beside him, once again, watching his back.
+        </p>
+        <p>
+
+        </p>
+      </div>
+      <div id="sandra-info" class="bio-content">
+        <div class="bio-photo"></div>
+        <h2>Sandra Wainwright</h2>
+        <h3>Bridesmaid</h3>
+        <p>
+          Whenever you hear an explosion of giggles down the hall, you just knew that Cindy and Sandra were
+          together. As kids, Sandra was always the shorter of the two, until adulthood, where Sandra now
+          towers over Cindy.
+        </p>
+        <p>
+          Sandra’s always been a force in Cindy’s life, as they grew up, sharing many life experiences together.
+          Now that they’re both engaged, they get to enjoy the stress and joy of planning a wedding together!
+        </p>
+      </div>
+      <div id="trung-info" class="bio-content">
+        <div class="bio-photo"></div>
+        <h2>Trung Diep</h2>
+        <h3>Groomsmen</h3>
+        <p>
+          It&apos;s a bird! It&apos;s a plane! No, it&apos;s Trung! Ever the live-long Superman fan, who would of thought he&apos;d be able to
+          get along with Anton, a live-long Batman fan? Long ago, when both Trung and Anton were still in the springtime of
+          their youth, they met at a computer company called, "TME". Being the only two "young" people there, it was only
+          natural that they bonded, doing youthful activities such as, over a shared interest in Dragonball Z and Naruto.
+        </p>
+        <p>
+          Their friendship has endured for many years, and in 2005, Anton had the honor of being one of Trung&apos;s groomsmen.
+          As one of Trung&apos;s esteemed groomsmen, Anton made sure Trung&apos;s final days as a bachelor were filled with
+          many great adventures, and most importantly, misadventures. With Trung as one of Anton&apos;s groomsmen, Anton is
+          certain that many great new adventures, and most importantly, misadventures are to come.
+        </p>
+      </div>
+      <div id="julie-info" class="bio-content">
+        <div class="bio-photo"></div>
+        <h2>Julie Wainwright</h2>
+        <h3>Bridesmaid</h3>
+        <p>
+          Growing up together, Cindy and Julie had always competed against one another. For the bed
+          during their sleep overs, for the honour of being the greatest sailor scout, and most importantly,
+          for the love and affection of the Backstreet Boy’s Nick Carter.
+        </p>
+        <p>
+          Now as adults, the two girls have matured in many ways. For instance, Julie no longer stays
+          over at Cindy’s house, where she’d have to sleep in Cindy’s closet. It is probably a good thing
+          they grew out of boy band singers: this wedding wouldn’t be happening otherwise.
+        </p>
+      </div>
+      <div id="alphonse-info" class="bio-content">
+        <div class="bio-photo"></div>
+        <h2>Alphonse Nguyen</h2>
+        <h3>Groomsmen</h3>
+        <p>
+          Anton first met Alphonse, mere hours after his birth, coincidently conceding with the introduction of stress into
+          Alphonse&apos;s life. Growing up, Anton adored his older, (shorter) brother, and decided that annoying him was the best
+          way to express these feelings. Strangely enough, Alphonse didn&apos;t seem to share this idealogy.
+        </p>
+        <p>
+          Having gone through countless arguments and bruises, the two somehow managed to
+          reach adulthood without completely destroying both their house and each other: A testiment to Anton&apos;s ability to run and hide in fear.
+          Despite their storied past, Anton is proud to have grown up with a great companion, and wouldn&apos;t have it any other way.
+        </p>
+      </div>
+      <div id="ann-info" class="bio-content">
+        <div class="bio-photo"></div>
+        <h2>Ann Hui</h2>
+        <h3>Bridesmaid</h3>
+        <p>
+          Ann wasn’t able to resist the delicious scents coming out of Cindy’s kitchen, and so together,
+          they explored the world of baking. From binge watching episode after episode of “Cake Boss” until
+          the early morning, to going out and purchasing KitchenAid Mixers, the two have accomplished
+          their goals of helping their significant others gain wait through all the goods they’ve had to eat.
+        </p>
+      </div>
+      <div id="ramiro-info" class="bio-content">
+        <div class="bio-photo"></div>
+        <h2>Ramiro Chamorro</h2>
+        <h3>Groomsmen</h3>
+        <p>
+          Anton met Ramiro on Anton&apos;s first day at FreshBooks. Ever since that fateful day, they&apos;ve teamed up time and time again on to accomplish many things:
           <ul>
-            <li><a id="home" href="#">Our Story</a></li>
-            <li><a id="party" href="#">Wedding Party</a></li>
-            <li><a id="ceremony" href="#">Ceremony</a></li>
-            <li><a id="reception" href="#">Reception</a></li>
-            <li><a id="rsvp" href="#">RSVP</a></li>
-            <li><a id="accomadations" href="#">Accomadations</a></li>
+            <li>Defeating the Locust horde</li>
+            <li>Bringing home <a href="http://instagram.com/p/UaPa4krRVe/" target="_blank">Gordon</a></li>
+            <li>Installing shelves</li>
+            <li>Inventing a secret handshake</li>
           </ul>
+          Impressive as theses accomplishments are, there is none greater then Ramiro and Anton getting, not one, but TWO engagement rings!
+          Having spent months researching the world of diamonds, they realized the diamonds found in many local stores simply wasn&apos;t good enough for their significant others.
+          So drive to Detroit they did, twice, to find the perfect diamond. And smuggled the diamonds across the border they did, twice, in the pursuit of maritial happiness.
+          Suffice to say, without Anton, Ramiro wouldn&apos;t be married, and without Ramiro, neither would Anton.
+        </p>
+      </div>
+      <div id="vanessa-info" class="bio-content">
+        <div class="bio-photo"></div>
+        <h2>Vanessa Ramawad</h2>
+        <h3>Bridesmaid</h3>
+        <p>
+          In the 11th grade, when Cindy started school at Rick Hansen, she knew absolutely nobody.
+          Lucky for her, Vanessa had the exact same courses as Cindy, and became Cindy’s first friend Rich Hansen.
+        </p>
+        <p>
+          Although they ended up going to different colleges and universities, they’ve always kept
+          in close contact through their monthly dinners together, to their excursions across the border
+          for the Cheesecake Factory. Whenever Cindy had a problem, Vanessa would always be there for her,
+          which is why Vanessa will be up at the altar with Cindy on her special day.
+        </p>
+      </div>
+      <div id="ted-info" class="bio-content">
+        <div class="bio-photo"></div>
+        <h2>Ted Chan</h2>
+        <h3>Groomsmen</h3>
+        <p>
+          In the summer of 2005, Anton decided to try his hand at Dragonboat. It was there that Ted first met Anton. Buoyed by a mutual appreciation
+          for comic books, guitars, and video games, the two became fast friends. Unfortunately for Cindy, Ted took Anton on journey into the depths
+          of the world of superheroes, resulting in many dollars spent on convention tickets, autographs, comic books, and nerd memorabilia.
+        </p>
+        <p>
+          Throughout their relationship, Ted has helped Anton time and time again, tirelessly dispensing his sage wisdom, advising Anton on everything
+          from relationships and careers, to finances. The repeated success of Ted&apos;s advice has convinced Anton, that he needs
+          a superhero like Ted, to stand with him at the altar, ready to battle any evil that may come his way. Fortunately for the attendees, Cindy
+          has not allowed Anton to dress Ted in spandex.
+        </p>
+      </div>
+    </script>
+
+    <script id="ceremony" type="text/html">
+      <div class="row">
+        <div class="col-md-6 text-center info">
+          <h1>Ceremony</h1>
+          <h2>St. Anthony of Padua Catholic Church</h2>
+          <p class="address">
+            940 North Drive Park<br/>
+            Brampton, Ontario<br/>
+            L6S 3L5
+          </p>
+          <p class="em">Ceremony commences at one&apos;clock in the afternoon</p>
+        </div>
+        <div class="map col-md-6">
+          <div id="map-ceremony" class="map"></div>
         </div>
       </div>
-    </nav>
+    </script>
 
-    <div class="container main">
-      <section id="story-section">
-        <h1 class="text-center">Our Story</h1>
-        <div class="vimeo-wrapper">
-          <iframe src="http://player.vimeo.com/video/43713894?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <script id="reception" type="text/html">
+      <div class="row">
+        <div class="col-md-6 text-center info">
+          <h1>Reception</h1>
+          <h2>Riviera Parque Dining,<br/>Banquet &amp; Convention Centre</h2>
+          <p class="address">
+            2800 Hwy 7<br/>
+            Concord, Ontario<br/>
+            L4K 1W8
+          </p>
+          <p class="em">Cocktail reception at six o&apos;clock in the evening</p>
+          <p class="em">Dinner at seven o&apos;clock</p>
         </div>
-      </section>
-      <section id="party-section">
-        <h1 class="text-center">Wedding Party</h1>
-        <table class="table table-condensed">
-          <tr>
-            <td class="bride" id="cindy">
-              <div class="bio-photo view-bio" rel="#cindy-info"></div>
-              <div class="bio hidden-xs">
-                <h2><a href="#" class="view-bio" rel="#cindy-info" alt="Cindy Vuong">Cindy Vuong</a></h2>
-                <p>Bride</p>
-              </div>
-            </td>
-            <td class="groom" id="anton">
-              <div class="bio-photo view-bio" rel="#anton-info"></div>
-              <div class="bio hidden-xs">
-                <h2><a href="#" class="view-bio" rel="#anton-info" alt="Anton Nguyen">Anton Nguyen</a></h2>
-                <p>Groom</p>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td class="bride" id="karen">
-              <div class="bio-photo view-bio" rel="#karen-info"></div>
-              <div class="bio hidden-xs">
-                <h2><a href="#" class="view-bio" rel="#karen-info" alt="Karen Sandhu">Karen Sandhu</a></h2>
-                <p>Maid of Honour</p>
-              </div>
-            </td>
-            <td class="groom" id="tenniel">
-              <div class="bio-photo view-bio" rel="#tenniel-info"></div>
-              <div class="bio hidden-xs">
-                <h2><a href="#" class="view-bio" rel="#tenniel-info" alt="Tenniel Chan">Tenniel Chan</a></h2>
-                <p>Best Man</p>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td class="bride" id="sandra">
-              <div class="bio-photo view-bio" rel="#sandra-info"></div>
-              <div class="bio hidden-xs">
-                <h2><a href="#" class="view-bio" rel="#sandra-info" alt="Sandra Wainwright">Sandra Wainwright</a></h2>
-                <p>Bridesmaid</p>
-              </div>
-            </td>
-            <td class="groom" id="trung">
-              <div class="bio-photo view-bio" rel="#trung-info"></div>
-              <div class="bio hidden-xs">
-                <h2><a href="#" class="view-bio" rel="#trung-info" alt="Trung Diep">Trung Diep</a></h2>
-                <p>Groomsmen</p>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td class="bride" id="julie">
-              <div class="bio-photo view-bio" rel="#julie-info"></div>
-              <div class="bio hidden-xs">
-                <h2><a href="#" class="view-bio" rel="#julie-info" alt="Julie Wainwright">Julie Wainwright</a></h2>
-                <p>Bridesmaid</p>
-              </div>
-            </td>
-            <td class="groom" id="alphonse">
-              <div class="bio-photo view-bio" rel="#alphonse-info"></div>
-              <div class="bio hidden-xs">
-                <h2><a href="#" class="view-bio" rel="#alphonse-info" alt="Alphonse Nguyen">Alphonse Nguyen</a></h2>
-                <p>Groomsmen</p>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td class="bride" id="ann">
-              <div class="bio-photo view-bio" rel="#ann-info"></div>
-              <div class="bio hidden-xs">
-                <h2><a href="#" class="view-bio" rel="#ann-info" alt="Ann Hui">Ann Hui</a></h2>
-                <p>Bridesmaid</p>
-              </div>
-            </td>
-            <td class="groom" id="ramiro">
-              <div class="bio-photo view-bio" rel="#ramiro-info"></div>
-              <div class="bio hidden-xs">
-                <h2><a href="#" class="view-bio" rel="#ramiro-info" alt="Ramiro Chamorro">Ramiro Chamorro</a></h2>
-                <p>Groomsmen</p>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td class="bride" id="vanessa">
-              <div class="bio-photo view-bio" rel="#vanessa-info"></div>
-              <div class="bio hidden-xs">
-                <h2><a href="#" class="view-bio" rel="#vanessa-info" alt="Vanessa Ramawad">Vanessa Ramawad</a></h2>
-                <p>Bridesmaid</p>
-              </div>
-            </td>
-            <td class="groom" id="ted">
-              <div class="bio-photo view-bio" rel="#ted-info"></div>
-              <div class="bio hidden-xs">
-                <h2><a href="#" class="view-bio" rel="#ted-info" alt="Ted Chan">Ted Chan</a></h2>
-                <p>Groomsmen</p>
-              </div>
-            </td>
-          </tr>
-        </table>
-      </section>
-      <section id="ceremony-section">
-        <div class="row">
-          <div class="col-md-6 text-center info">
-            <h1>Ceremony</h1>
-            <h2>St. Anthony of Padua Catholic Church</h2>
-            <p class="address">
-              940 North Drive Park<br/>
-              Brampton, Ontario<br/>
-              L6S 3L5
-            </p>
-            <p class="em">Ceremony commences at one'clock in the afternoon</p>
-          </div>
-          <div class="map col-md-6">
-            <div id="map-ceremony" class="map"></div>
-          </div>
+        <div class="map col-md-6">
+          <div id="map-reception" class="map"></div>
         </div>
-      </section>
-      <section id="reception-section">
-        <div class="row">
-          <div class="map col-md-6">
-            <div id="map-reception" class="map"></div>
-          </div>
-          <div class="col-md-6 text-center info">
-            <h1>Reception</h1>
-            <h2>Riviera Parque Dining,<br/>Banquet &amp; Convention Centre</h2>
-            <p class="address">
-              2800 Hwy 7<br/>
-              Concord, Ontario<br/>
-              L4K 1W8
-            </p>
-            <p class="em">Cocktail reception at six o'clock in the evening</p>
-            <p class="em">Dinner at seven o'clock</p>
-          </div>
-        </div>
-      </section>
-      <section id="rsvp-section">
-        <h1>RSVP</h1>
-        <form role="form">
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Ceremony</th>
-                  <th>Reception</th>
-                  <th>Dietary Restrictions</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Rae Qu</td>
-                  <td>
-                    <label>
-                      <input type="checkbox"/> Attending
-                    </label>
-                  </td>
-                  <td>
-                    <label>
-                      <input type="checkbox"/> Attending
-                    </label>
-                  </td>
-                  <td>
-                    <select>
-                      <option>Vegatarian</option>
-                      <option>Vegan</option>
-                      <option>Kosher</option>
-                      <option>Halal</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Kwok Chan</td>
-                  <td>
-                    <label>
-                      <input type="checkbox"/> Attending
-                    </label>
-                  </td>
-                  <td>
-                    <label>
-                      <input type="checkbox"/> Attending
-                    </label>
-                  </td>
-                  <td>
-                    <select>
-                      <option>Vegatarian</option>
-                      <option>Vegan</option>
-                      <option>Kosher</option>
-                      <option>Halal</option>
-                    </select>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-      </section>
-      <section id="accomadations-section">
-        <h1>Accomadations</h1>
+      </div>
+    </script>
+
+    <script id="rsvp" type="text/html">
+      <h1>RSVP</h1>
+    </script>
+
+    <script id="accommadations" type="text/html">
+      <div class="text-left">
+        <h1>Accommadations</h1>
         <p>
-            For your reference, the following is a list of hotels located close to the reception hall. Please make arrangements for both accommodation and transportation in advance if you are planning on drinking.
+            For your reference, the following is a list of hotels located close to the reception hall.
+            Please make arrangements for both accommodation and transportation in advance if you are
+            planning on drinking.
         </p>
         <div class="hotels">
           <div id="homewood" class="hotel-content">
@@ -319,310 +465,29 @@
           </div>
           <div class="clearfix"></div>
         </div>
-      </section>
-
-    </div><!-- /.container -->
-
-    <div id="cindy-info" class="bio-content">
-      <div class="bio-photo"></div>
-      <h2>Cindy Vuong</h2>
-      <h3>Bride</h3>
-      <p>
-        Cindy first met Anton at a joint birthday party for Melissa Chan and herself in 2003.
-        There was an instant and undeniable chemistry between the two, as they were both driven
-        by a mutual love of music. They would talk everyday, sharing songs with one another, laughing together
-        and quickly became close friends.
-      </p>
-      <p>
-        It took two years, before Cindy finally succumbed to Anton's devilish charms, and dashing good looks,
-        an event, that Anton believes to be the best decision of Cindy's life. After driving Cindy crazy for 8 years with his antics,
-        Anton realized that if he wanted it, he had to put a ring on it. And so, on August 29th, 2013,
-        Anton had Cindy picked up in a limousine from work in Downtown Toronto, and sent her on an elaborate scavenger hunt around Mississauga,
-        to recreate the fateful night that Anton asked Cindy to be his girlfriend. His big romantic gesture paid off, as Cindy said yes, and as you know, the rest is history.
-      </p>
-    </div>
-    <div id="anton-info" class="bio-content">
-      <div class="bio-photo"></div>
-      <h2>Anton Nguyen</h2>
-      <h3>Groom</h3>
-      <p>
-        Anton had known Cindy for two years, before he realized how really, really, really, ridiculously happy, she made him, and thus, Anton decided to pursue Cindy's affections.
-        Having been friends for so long, Anton decided a 'slow burn' strategy was best, where Anton would subtly court her, just a little, every day, until Cindy would suddenly realize
-        she had feelings for Anton, but not know how it happened.
-      </p>
-      <p>
-        After battling the friendzone for seven long months, Anton decided that enough was enough: he would make Cindy his girlfriend!
-        So after a long day, studying at UTM, he took her out for a fancy dinner at Pizza Hut. After graciously paying for the meal, Anton took Cindy home. He was about to make his big move,
-        when the unimaginable happened: He chickened out!
-      </p>
-      <p>
-        Driving away, images of a life without Cindy flashed before Anton's eyes, causing him to shudder at the possibility of such a world. After a boost in confidence (yelling) from Nia Warrouw, Anton turned the car around,
-        and drove back to Cindy's home. In order to lure her out, Anton shamefully lied to her, telling her that he had "lost" his debit card on her driveway, and needed
-        her help to find it. Cindy came out, with her flashlight, where Anton unveiled the depths of his deceit and revealed his feelings for her. It worked, and so on November 13th, 2005,
-        they became lovers.
-      </p>
-    </div>
-    <div id="karen-info" class="bio-content">
-      <div class="bio-photo"></div>
-      <h2>Karen Sandhu</h2>
-      <h3>Maid of Honour</h3>
-      <p>
-        Cindy had begun her 2nd year of business administration at Sheridan college, when a bright-eyed girl,
-        dressed in green, sat down beside her in a puff, nearly spilling a bottle of orange juice onto Cindy’s laptop!
-        Cindy had never met someone who could fit so many words, so fast, into a sentence, without taking a breath of
-        air!
-      </p>
-      <p>
-        From that day, Cindy and Karen were inseparable. Karen has the unique ability to accidentally kick you,
-        under a table from absolutely any angle: the cause of many bruises on Cindy’s legs. Cindy considers Karen
-        to be the most caring person she knows, an individual who always stand the people she loves no matter
-        where they are. Cindy is lucky to have Karen as her maid of honour.
-      </p>
-    </div>
-    <div id="tenniel-info" class="bio-content">
-      <div class="bio-photo"></div>
-      <h2>Tenniel Chan</h2>
-      <h3>Best Man</h3>
-      <p>
-        Anton had no idea, that in the lecture hall of his "Object-Oriented Systems Analysis and Design Using UML" class, that he would
-        meet his future best man. At the University of Toronto, life as a Computer Science student was difficult, fraught with countless all-nighters,
-        endless cups of coffee, and immeasurable explcits shouted at a computer screen. Despite all these trials and tribulations,
-        at least with Tenniel fighting alongside him in the trenches, Anton knew he'd survive.
-      </p>
-      <p>
-        After the two broke free of the shackles of education, they finally began to experience and understand life with an income.
-        The two embarked on many adventures, taking them from the streets of Montreal, all the way to the bright lights of Las Vegas.
-        No matter what troubles arose throughout their adventures, Tenniel was always there with Anton, watching his back.
-        And so, on this important day, Anton has chosen to trust Tenniel to stand beside him, once again, watching his back.
-      </p>
-      <p>
-
-      </p>
-    </div>
-    <div id="sandra-info" class="bio-content">
-      <div class="bio-photo"></div>
-      <h2>Sandra Wainwright</h2>
-      <h3>Bridesmaid</h3>
-      <p>
-        Whenever you hear an explosion of giggles down the hall, you just knew that Cindy and Sandra were
-        together. As kids, Sandra was always the shorter of the two, until adulthood, where Sandra now
-        towers over Cindy.
-      </p>
-      <p>
-        Sandra’s always been a force in Cindy’s life, as they grew up, sharing many life experiences together.
-        Now that they’re both engaged, they get to enjoy the stress and joy of planning a wedding together!
-      </p>
-    </div>
-    <div id="trung-info" class="bio-content">
-      <div class="bio-photo"></div>
-      <h2>Trung Diep</h2>
-      <h3>Groomsmen</h3>
-      <p>
-        It's a bird! It's a plane! No, it's Trung! Ever the live-long Superman fan, who would of thought he'd be able to
-        get along with Anton, a live-long Batman fan? Long ago, when both Trung and Anton were still in the springtime of
-        their youth, they met at a computer company called, "TME". Being the only two "young" people there, it was only
-        natural that they bonded, doing youthful activities such as, over a shared interest in Dragonball Z and Naruto.
-      </p>
-      <p>
-        Their friendship has endured for many years, and in 2005, Anton had the honor of being one of Trung's groomsmen.
-        As one of Trung's esteemed groomsmen, Anton made sure Trung's final days as a bachelor were filled with
-        many great adventures, and most importantly, misadventures. With Trung as one of Anton's groomsmen, Anton is
-        certain that many great new adventures, and most importantly, misadventures are to come.
-      </p>
-    </div>
-    <div id="julie-info" class="bio-content">
-      <div class="bio-photo"></div>
-      <h2>Julie Wainwright</h2>
-      <h3>Bridesmaid</h3>
-      <p>
-        Growing up together, Cindy and Julie had always competed against one another. For the bed
-        during their sleep overs, for the honour of being the greatest sailor scout, and most importantly,
-        for the love and affection of the Backstreet Boy’s Nick Carter.
-      </p>
-      <p>
-        Now as adults, the two girls have matured in many ways. For instance, Julie no longer stays
-        over at Cindy’s house, where she’d have to sleep in Cindy’s closet. It is probably a good thing
-        they grew out of boy band singers: this wedding wouldn’t be happening otherwise.
-      </p>
-    </div>
-    <div id="alphonse-info" class="bio-content">
-      <div class="bio-photo"></div>
-      <h2>Alphonse Nguyen</h2>
-      <h3>Groomsmen</h3>
-      <p>
-        Anton first met Alphonse, mere hours after his birth, coincidently conceding with the introduction of stress into
-        Alphonse's life. Growing up, Anton adored his older, (shorter) brother, and decided that annoying him was the best
-        way to express these feelings. Strangely enough, Alphonse didn't seem to share this idealogy.
-      </p>
-      <p>
-        Having gone through countless arguments and bruises, the two somehow managed to
-        reach adulthood without completely destroying both their house and each other: A testiment to Anton's ability to run and hide in fear.
-        Despite their storied past, Anton is proud to have grown up with a great companion, and wouldn't have it any other way.
-      </p>
-    </div>
-    <div id="ann-info" class="bio-content">
-      <div class="bio-photo"></div>
-      <h2>Ann Hui</h2>
-      <h3>Bridesmaid</h3>
-      <p>
-        Ann wasn’t able to resist the delicious scents coming out of Cindy’s kitchen, and so together,
-        they explored the world of baking. From binge watching episode after episode of “Cake Boss” until
-        the early morning, to going out and purchasing KitchenAid Mixers, the two have accomplished
-        their goals of helping their significant others gain wait through all the goods they’ve had to eat.
-      </p>
-    </div>
-    <div id="ramiro-info" class="bio-content">
-      <div class="bio-photo"></div>
-      <h2>Ramiro Chamorro</h2>
-      <h3>Groomsmen</h3>
-      <p>
-        Anton met Ramiro on Anton's first day at FreshBooks. Ever since that fateful day, they've teamed up time and time again on to accomplish many things:
-        <ul>
-          <li>Defeating the Locust horde</li>
-          <li>Bringing home <a href="http://instagram.com/p/UaPa4krRVe/" target="_blank">Gordon</a></li>
-          <li>Installing shelves</li>
-          <li>Inventing a secret handshake</li>
-        </ul>
-        Impressive as theses accomplishments are, there is none greater then Ramiro and Anton getting, not one, but TWO engagement rings!
-        Having spent months researching the world of diamonds, they realized the diamonds found in many local stores simply wasn't good enough for their significant others.
-        So drive to Detroit they did, twice, to find the perfect diamond. And smuggled the diamonds across the border they did, twice, in the pursuit of maritial happiness.
-        Suffice to say, without Anton, Ramiro wouldn't be married, and without Ramiro, neither would Anton.
-      </p>
-    </div>
-    <div id="vanessa-info" class="bio-content">
-      <div class="bio-photo"></div>
-      <h2>Vanessa Ramawad</h2>
-      <h3>Bridesmaid</h3>
-      <p>
-        In the 11th grade, when Cindy started school at Rick Hansen, she knew absolutely nobody.
-        Lucky for her, Vanessa had the exact same courses as Cindy, and became Cindy’s first friend Rich Hansen.
-      </p>
-      <p>
-        Although they ended up going to different colleges and universities, they’ve always kept
-        in close contact through their monthly dinners together, to their excursions across the border
-        for the Cheesecake Factory. Whenever Cindy had a problem, Vanessa would always be there for her,
-        which is why Vanessa will be up at the altar with Cindy on her special day.
-      </p>
-    </div>
-    <div id="ted-info" class="bio-content">
-      <div class="bio-photo"></div>
-      <h2>Ted Chan</h2>
-      <h3>Groomsmen</h3>
-      <p>
-        In the summer of 2005, Anton decided to try his hand at Dragonboat. It was there that Ted first met Anton. Buoyed by a mutual appreciation
-        for comic books, guitars, and video games, the two became fast friends. Unfortunately for Cindy, Ted took Anton on journey into the depths
-        of the world of superheroes, resulting in many dollars spent on convention tickets, autographs, comic books, and nerd memorabilia.
-      </p>
-      <p>
-        Throughout their relationship, Ted has helped Anton time and time again, tirelessly dispensing his sage wisdom, advising Anton on everything
-        from relationships and careers, to finances. The repeated success of Ted's advice has convinced Anton, that he needs
-        a superhero like Ted, to stand with him at the altar, ready to battle any evil that may come his way. Fortunately for the attendees, Cindy
-        has not allowed Anton to dress Ted in spandex.
-      </p>
-    </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1ZXRlRrjuXhz09ISjsKgFKtXxRR2tiwE&sensor=true">
+      </div>
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery.onepage-scroll.min.js"></script>
+
+    <script id="not-found" type="text/html">
+      <h1>This is not the wedding page you&apos;re looking for.</h1>
+      <img src="images/404.jpg"/>
+    </script>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1ZXRlRrjuXhz09ISjsKgFKtXxRR2tiwE&sensor=true"></script>
     <script type="text/javascript" src="js/jquery.tools.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        var isInternetExplorer = function () {
-          return navigator.appName == 'Microsoft Internet Explorer';
-        };
 
-        var enableScroller = function() {
-          if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-           return false;
-          }
-
-          if ($(window).width() < 992) {
-            return false;
-          }
-
-          if (isInternetExplorer()) {
-            return false;
-          }
-
-          return true;
-        }
-
-        if (enableScroller()) {
-          $(".main").onepage_scroll({
-            sectionContainer: "section",
-            responsiveFallback: 600
-          });
-
-          var moveToPage = function(index) {
-            $('.main').moveTo(index);
-            return false;
-          };
-
-          $('#home').on('click', function() {
-            return moveToPage(1);
-          });
-
-          $('#party').on('click', function() {
-            return moveToPage(2);
-          });
-
-          $('#ceremony').on('click', function() {
-            return moveToPage(3);
-          });
-
-          $('#reception').on('click', function() {
-            return moveToPage(4);
-          });
-
-          $('#rsvp').on('click', function() {
-            return moveToPage(5);
-          });
-
-          $('#accomadations').on('click', function() {
-            return moveToPage(6);
-          });
-
-          $('.view-bio').overlay({
-            top: 'center',
-            left: 'center',
-            mask: {
-              color: '#FFF',
-              loadSpeed: 200,
-              opacity: 0.9
-            },
-            closeOnClick: false
-          });
-        }
-
-        var initializeMap = function(lat, long, id, title) {
-            var latLng = new google.maps.LatLng(lat, long);
-            var options = {
-              center: latLng,
-              zoom: 13
-            };
-
-            var map = new google.maps.Map(
-              document.getElementById(id),
-              options
-            );
-
-            var marker = new google.maps.Marker({
-                position: latLng,
-                map: map,
-                title: title
-            });
-
-            marker.setMap(map);
-        }
-
-        initializeMap(43.735493, -79.742637, "map-ceremony", "St. Anthony of Padua Parish");
-        initializeMap(43.7958784, -79.5188288, "map-reception", "Riviera Parque");
-      });
+    <script type="text/javascript" src="js/views/Backbone.View.js"></script>
+    <script type="text/javascript" src="js/views/ContentView.js"></script>
+    <script type="text/javascript" src="js/views/MapView.js"></script>
+    <script type="text/javascript" src="js/views/WeddingPartyView.js"></script>
+    <script type="text/javascript" src="js/ApplicationRouter.js"></script>
+    <script type="text/javascript">
+      var router = new ApplicationRouter($('#content'));
+      Backbone.history.start();
     </script>
   </body>
 </html>
