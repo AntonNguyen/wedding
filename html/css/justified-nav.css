@@ -17,7 +17,7 @@ body {
 
 h1 {
   color: #672E92;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 #logo {
@@ -69,6 +69,7 @@ h1 {
   margin: 30 auto;
 }
 
+/* Responsive: Portrait tablets and up */
 @media (min-width: 768px) {
   .nav-justified {
     max-height: 52px;
@@ -85,22 +86,17 @@ h1 {
     border-right: 0;
     border-radius: 0 5px 5px 0;
   }
-}
-
-/* Responsive: Portrait tablets and up */
-@media (min-width: 992px) {
-  /* Remove the padding we set earlier */
-  .masthead,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
-  }
 
   iframe,
   .vimeo-wrapper {
     width: 750px;
     height: 422px;
+  }
+
+
+  h1 {
+    color: #672E92;
+    font-size: 40px;
   }
 
   #content {
