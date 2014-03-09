@@ -110,7 +110,7 @@ h3 {
   left: 6px
 }
 
-.bio-content .bio-photo {
+.modal-header .bio-photo {
   float: left;
   margin-right: 5px;
   margin-bottom: 5px;
@@ -122,18 +122,17 @@ a.view-bio:hover {
   cursor: pointer;
 }
 
-.bio-content p {
+.modal-body p {
   padding: 5px;
 }
 
-.bio-content h2 {
+.modal-name {
   color: #672E92;
   margin: 5px 0;
-  border-bottom: 1px solid #CCC;
   font-size:25px
 }
 
-.bio-content h3 {
+.modal-title {
   margin: 2px 0;
 }
 
@@ -198,85 +197,73 @@ a.view-bio:hover {
 #alphonse .bio-photo:hover {
   background-position: 0 0;
 }
-#alphonse .bio-photo,
-#alphonse-info .bio-photo {
+#alphonse .bio-photo {
   background-position: 0 -142px;
 }
 #ann .bio-photo:hover {
   background-position: 0 -284px;
 }
-#ann .bio-photo,
-#ann-info .bio-photo {
+#ann .bio-photo {
   background-position: 0 -426px;
 }
 #anton .bio-photo:hover {
   background-position: 0 -568px;
 }
-#anton .bio-photo,
-#anton-info .bio-photo {
+#anton .bio-photo {
   background-position: 0 -710px;
 }
 #cindy .bio-photo:hover {
   background-position: 0 -852px;
 }
-#cindy .bio-photo,
-#cindy-info .bio-photo {
+#cindy .bio-photo {
   background-position: 0 -994px;
 }
 #julie .bio-photo:hover {
   background-position: 0 -1136px;
 }
-#julie .bio-photo,
-#julie-info .bio-photo {
+#julie .bio-photo {
   background-position: 0 -1278px;
 }
 #karen .bio-photo:hover {
   background-position: 0 -1420px;
 }
-#karen .bio-photo,
-#karen-info .bio-photo {
+#karen .bio-photo {
   background-position: 0 -1562px;
 }
 #ramiro .bio-photo:hover {
   background-position: 0 -1704px;
 }
-#ramiro .bio-photo,
-#ramiro-info .bio-photo {
+#ramiro .bio-photo {
   background-position: 0 -1846px;
 }
 #sandra .bio-photo:hover {
   background-position: -142px 0;
 }
-#sandra .bio-photo,
-#sandra-info .bio-photo {
+#sandra .bio-photo {
   background-position: -142px -142px;
 }
 #ted .bio-photo:hover {
   background-position: -142px -284px;
 }
-#ted .bio-photo,
-#ted-info .bio-photo {
+#ted .bio-photo {
   background-position: -142px -426px;
 }
 #tenniel .bio-photo:hover {
   background-position: -142px -568px;
 }
-#tenniel .bio-photo,
-#tenniel-info .bio-photo {
+#tenniel .bio-photo {
   background-position: -142px -710px;
 }
 #trung .bio-photo:hover {
   background-position: -142px -852px;
 }
-#trung .bio-photo,
-#trung-info .bio-photo {
+#trung .bio-photo {
   background-position: -142px -994px;
 }
 #vanessa .bio-photo:hover {
   background-position: -142px -1136px;
 }
-#vanessa .bio-photo,
-#vanessa-info .bio-photo {
+#vanessa .bio-photo {
   background-position: -142px -1278px;
 }
 
@@ -328,25 +315,9 @@ a.view-bio:hover {
 
 /* Responsive: Portrait tablets and up */
 @media (min-width: 768px) {
-  .bio-content {
-    display:none;
-    z-index:10000;
-    background-color:#fff;
-    width:676px;
-    min-height:200px;
-    border:1px solid #666;
-    -moz-box-shadow:0 0 90px 5px #000;
-    -webkit-box-shadow: 0 0 90px #000;
-    padding: 10px;
-    top: 25%;
-    left: 50%;
-    margin-left: -338px;
-  }
-
-  .bio-content h2 {
+  .modal-name {
     color: #672E92;
     margin: 5px 0;
-    border-bottom: 1px solid #CCC;
     font-size:45px;
     padding-bottom: 5px;
   }
