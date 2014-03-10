@@ -24,22 +24,30 @@
   </head>
 
   <body>
-
     <div class="container">
-
       <div class="masthead">
         <div class="text-center">
           <img id="logo" src="images/logo.png" alt="Cindy &amp; Anton's Wedding"/>
         </div>
         <h3 class="text-center">August 30th, 2014</h3>
-        <ul class="nav nav-justified">
-          <li class="active"><a href="#our-story">Our Story</a></li>
-          <li><a href="#wedding-party">Wedding Party</a></li>
-          <li><a href="#ceremony">Ceremony</a></li>
-          <li><a href="#reception">Reception</a></li>
-          <li><a href="#rsvp">RSVP</a></li>
-          <li><a href="#accommadations">Accommadations</a></li>
-        </ul>
+        <div class="nav-wrapper hidden-xs">
+          <ul class="nav nav-justified">
+            <li class="active"><a href="#our-story">Our Story</a></li>
+            <li><a href="#wedding-party">Wedding Party</a></li>
+            <li><a href="#ceremony">Ceremony</a></li>
+            <li><a href="#reception">Reception</a></li>
+            <li><a href="#rsvp">RSVP</a></li>
+            <li><a href="#accommadations">Accommadations</a></li>
+          </ul>
+        </div>
+        <select id="nav-select" class="visible-xs">
+          <option value="#our-story">Our Story</option>
+          <option value="#wedding-party">Wedding Party</option>
+          <option value="#ceremony">Ceremony</option>
+          <option value="#reception">Reception</option>
+          <option value="#rsvp">RSVP</option>
+          <option value="#accommadations">Accommadations</option>
+        </select>
       </div>
 
       <div id="content"></div>
@@ -301,10 +309,12 @@
     <script type="text/javascript" src="js/views/MapView.js"></script>
     <script type="text/javascript" src="js/views/BaseModalView.js"></script>
     <script type="text/javascript" src="js/views/WeddingPartyView.js"></script>
+    <script type="text/javascript" src="js/views/SelectorView.js"></script>
     <script type="text/javascript" src="js/ApplicationRouter.js"></script>
     <script type="text/javascript">
       var router = new ApplicationRouter($('#content'));
       Backbone.history.start();
+      var selector = new SelectorView();
     </script>
   </body>
 </html>
