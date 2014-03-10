@@ -363,7 +363,7 @@ a.view-bio:hover {
 
   #content {
     background-image: url('../images/name-background.png');
-    background-position: center center;
+    background-position: center 150px;
     background-repeat: no-repeat;
     min-height: 600px;
   }
